@@ -1,1 +1,205 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Serviços — PL Digital Group</title>
+  <meta name="description" content="Serviços PL Digital: Instagram, tráfego, site institucional e automações. Questionário para orçamento no WhatsApp.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
 
+  <div class="topbar">
+    <div class="container row">
+      <div class="left">
+        <span class="dot"></span>
+        <span id="siteEmail">PLdigitalG@gmail.com</span>
+        <span class="pill-mini" id="siteCity">Belo Horizonte • MG • Seg–Sex • 08:00–18:00</span>
+      </div>
+      <div class="right">
+        <span class="pill-mini">Serviços • Diagnóstico • WhatsApp</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container row">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div>
+          <strong>PL DIGITAL GROUP</strong>
+          <span>Gestão • Tráfego • Sites/Sistemas</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a data-page href="index.html">Home</a>
+        <a data-page href="servicos.html">Serviços</a>
+        <a data-page href="portfolio.html">Portfólio</a>
+        <a data-page href="sobre.html">Sobre</a>
+        <a data-page href="contato.html">Contato</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn primary" data-wa="1" href="#">Orçamento</a>
+        <button class="btn icon" id="btnMenu" type="button">≡</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer">
+    <div class="panel">
+      <div class="top">
+        <strong>Menu</strong>
+        <button class="btn" id="btnClose" type="button">Fechar</button>
+      </div>
+      <nav>
+        <a data-page href="index.html">Home</a>
+        <a data-page href="servicos.html">Serviços</a>
+        <a data-page href="portfolio.html">Portfólio</a>
+        <a data-page href="sobre.html">Sobre</a>
+        <a data-page href="contato.html">Contato</a>
+      </nav>
+      <div class="cta">
+        <a class="btn primary" data-wa="1" href="#">Falar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="head">
+        <div>
+          <h2>Serviços</h2>
+          <p class="sub">Escolha o que você precisa. Depois, faça o questionário (1 min) e envie no WhatsApp com tudo pronto.</p>
+        </div>
+        <span class="badge">Cara de empresa grande</span>
+      </div>
+
+      <div class="grid3">
+        <div class="card reveal">
+          <span class="tag">Autoridade</span>
+          <h3>Gestão de Instagram</h3>
+          <p>Bio + posicionamento + conteúdo alinhado à oferta para gerar leads.</p>
+          <a class="link" href="#quiz">Fazer questionário <span class="arrow"></span></a>
+        </div>
+        <div class="card reveal">
+          <span class="tag">Conversão</span>
+          <h3>Tráfego Pago (WhatsApp)</h3>
+          <p>Campanhas com foco em custo por lead e organização do atendimento.</p>
+          <a class="link" href="#quiz">Fazer questionário <span class="arrow"></span></a>
+        </div>
+        <div class="card reveal">
+          <span class="tag">Confiança</span>
+          <h3>Site Institucional Premium</h3>
+          <p>Site leve e claro, com seções alinhadas, prova e CTA no ponto certo.</p>
+          <a class="link" href="#quiz">Fazer questionário <span class="arrow"></span></a>
+        </div>
+      </div>
+
+      <div class="grid3" style="margin-top:14px;">
+        <div class="card reveal">
+          <span class="tag">Escala</span>
+          <h3>Automação WhatsApp</h3>
+          <p>Mensagem padrão, coleta de dados, organização e rapidez no atendimento.</p>
+          <a class="link" href="#quiz">Fazer questionário <span class="arrow"></span></a>
+        </div>
+        <div class="card reveal">
+          <span class="tag">Venda</span>
+          <h3>Landing de conversão (quando precisa)</h3>
+          <p>Para campanhas específicas. Sem bagunça e com conversão no WhatsApp.</p>
+          <a class="link" href="#quiz">Fazer questionário <span class="arrow"></span></a>
+        </div>
+        <div class="card reveal">
+          <span class="tag">Ação</span>
+          <h3>Diagnóstico Premium</h3>
+          <p>Plano de ação com ajustes e foco em resultado (sem achismo).</p>
+          <a class="link" href="#quiz">Fazer questionário <span class="arrow"></span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUESTIONÁRIO -->
+  <section class="section" id="quiz">
+    <div class="container">
+      <div class="head">
+        <div>
+          <h2>Questionário (1 minuto)</h2>
+          <p class="sub">Preencha e clique em “Enviar no WhatsApp”. A mensagem já vai completa e organizada.</p>
+        </div>
+        <span class="badge">Mensagem pronta</span>
+      </div>
+
+      <div class="split">
+        <div class="panel reveal">
+          <h3>Como funciona</h3>
+          <ul class="list">
+            <li>Você seleciona objetivo, urgência e serviços</li>
+            <li>Eu recebo uma mensagem completa no WhatsApp</li>
+            <li>Respondo com plano e orçamento mais rápido</li>
+          </ul>
+          <div style="margin-top:12px;">
+            <a class="btn primary" data-wa="Olá! Quero fazer um diagnóstico do meu digital. Pode me orientar?" href="#">Quero falar direto</a>
+          </div>
+        </div>
+
+        <div class="panel reveal">
+          <form class="form" id="serviceQuiz">
+            <input class="input" id="qName" placeholder="Seu nome" required>
+            <input class="input" id="qPhone" placeholder="Seu WhatsApp" required>
+            <input class="input" id="qCity" placeholder="Cidade (ex: Belo Horizonte)" value="Belo Horizonte">
+
+            <label class="small"><strong>Objetivo principal</strong></label>
+            <label><input type="radio" name="objective" value="Aparecer mais no Google/Instagram e gerar leads" required> Aparecer mais e gerar leads</label>
+            <label><input type="radio" name="objective" value="Organizar o WhatsApp e melhorar conversão"> Organizar WhatsApp e conversão</label>
+            <label><input type="radio" name="objective" value="Criar/arrumar site com cara de empresa grande"> Site com cara de empresa grande</label>
+
+            <label class="small" style="margin-top:6px;"><strong>Serviços de interesse</strong></label>
+            <label><input type="checkbox" name="services" value="Gestão de Instagram"> Gestão de Instagram</label>
+            <label><input type="checkbox" name="services" value="Tráfego Pago (WhatsApp)"> Tráfego Pago (WhatsApp)</label>
+            <label><input type="checkbox" name="services" value="Site Institucional Premium"> Site Institucional Premium</label>
+            <label><input type="checkbox" name="services" value="Automação WhatsApp"> Automação WhatsApp</label>
+
+            <label class="small" style="margin-top:6px;"><strong>Urgência</strong></label>
+            <label><input type="radio" name="urgency" value="Quero começar essa semana" required> Quero começar essa semana</label>
+            <label><input type="radio" name="urgency" value="Quero começar em 15 dias"> Quero começar em 15 dias</label>
+            <label><input type="radio" name="urgency" value="Estou pesquisando (sem pressa)"> Estou pesquisando</label>
+
+            <label class="small" style="margin-top:6px;"><strong>Faixa de investimento</strong></label>
+            <select class="select" id="qBudget" required>
+              <option value="" selected disabled>Selecione</option>
+              <option>Até R$ 300/mês</option>
+              <option>R$ 300 a R$ 800/mês</option>
+              <option>R$ 800 a R$ 2.000/mês</option>
+              <option>Acima de R$ 2.000/mês</option>
+            </select>
+
+            <textarea class="input" id="qExtra" placeholder="O que você vende e qual seu objetivo? (ex: barbearia em BH, quero agenda cheia)"></textarea>
+
+            <button class="btn primary" type="submit">Enviar no WhatsApp</button>
+            <p class="small">Não mostramos o número no site — só abre o WhatsApp com a mensagem pronta.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container row">
+      <div>
+        <strong>PL Digital Group</strong>
+        <div class="muted">Serviços • Conversão • WhatsApp • <span id="year"></span></div>
+      </div>
+      <div class="muted">Email: PLdigitalG@gmail.com</div>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa="1" href="#" aria-label="WhatsApp">
+    <span class="pulse"></span>
+    <svg viewBox="0 0 32 32"><path d="M19.11 17.41c-.29-.15-1.71-.84-1.98-.94-.27-.1-.47-.15-.67.15-.2.29-.77.94-.94 1.13-.17.2-.35.22-.64.07-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.52.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.29-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.11 3.22 5.12 4.52.72.31 1.28.49 1.71.63.72.23 1.37.2 1.88.12.57-.09 1.71-.7 1.95-1.38.24-.67.24-1.25.17-1.38-.07-.12-.27-.2-.57-.35z"/><path d="M26.62 5.35C23.97 2.71 20.47 1.25 16.74 1.25 9.08 1.25 2.85 7.48 2.85 15.14c0 2.45.64 4.84 1.86 6.95L2.73 30.75l8.86-1.93c2.04 1.11 4.34 1.7 6.69 1.7h.01c7.66 0 13.89-6.23 13.89-13.89 0-3.71-1.45-7.2-4.06-9.78zm-9.88 22.8h-.01c-2.07 0-4.1-.56-5.86-1.61l-.42-.25-5.26 1.15 1.12-5.12-.27-.43c-1.14-1.81-1.74-3.91-1.74-6.06 0-6.29 5.12-11.41 11.41-11.41 3.05 0 5.91 1.19 8.06 3.34 2.15 2.15 3.33 5.01 3.33 8.07 0 6.29-5.12 11.32-11.36 11.32z"/></svg>
+  </a>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
