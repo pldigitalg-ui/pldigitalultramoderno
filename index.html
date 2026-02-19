@@ -10,12 +10,12 @@
   <link rel="preload" href="assets/css/styles.css" as="style" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!-- Favicon simples (opcional) -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' rx='18' fill='%2306080f'/%3E%3Cpath d='M18 36c6-16 14-22 28-18-9 3-14 9-16 20-1 6-6 9-12 7z' fill='%2300ff88'/%3E%3C/svg%3E" />
 </head>
+
 <body>
 
-  <!-- TOP STRIP (amarelo) -->
+  <!-- TOP STRIP -->
   <div class="top-strip">
     <div class="container">
       <div class="strip-left">
@@ -69,40 +69,12 @@
     </div>
   </div>
 
-<section class="hero">
-  <div class="container hero-grid">
+  <!-- HERO (ÚNICA) -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
 
-    <div class="hero-text">
-      <div class="hero-tags">
-        <span>Resposta rápida</span>
-        <span>Foco em conversão</span>
-        <span>Crescimento organizado</span>
-      </div>
-
-      <h1>
-        Eu organizo seu digital<br>
-        com padrão <span>premium</span>
-      </h1>
-
-      <p>
-        Instagram + tráfego + site/sistema para o cliente entender,
-        confiar e chamar no WhatsApp.
-      </p>
-
-      <div class="hero-cta">
-        <button class="btn-primary">Entrar em contato</button>
-        <button class="btn-outline">Ver serviços</button>
-      </div>
-    </div>
-
-    <div class="hero-mascot">
-      <img src="ativos/imagem/mascot.png">
-    </div>
-
-  </div>
-</section>
-
-        <!-- COPY RIGHT -->
+        <!-- Left -->
         <div class="hero-copy">
           <div class="h-eyebrow">
             <span class="spark"></span>
@@ -125,7 +97,17 @@
           <div class="note">
             Estratégia clara, execução rápida e entrega com padrão premium.
           </div>
+
+          <!-- Badges dinâmicas do JSON -->
+          <div class="badges" id="badges"></div>
         </div>
+
+        <!-- Right Visual -->
+        <div class="hero-visual" id="heroVisual" aria-hidden="true">
+          <div class="hero-bg" id="heroBg"></div>
+          <img id="heroMascot" class="hero-mascot" src="assets/img/mascot.png" alt="PL Digital Group" loading="eager">
+        </div>
+
       </div>
     </div>
   </section>
@@ -243,7 +225,6 @@
   <!-- Floating WhatsApp -->
   <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
     <span class="pulse" aria-hidden="true"></span>
-    <!-- WhatsApp icon -->
     <svg viewBox="0 0 32 32" aria-hidden="true">
       <path d="M19.11 17.41c-.29-.15-1.71-.84-1.98-.94-.27-.1-.47-.15-.67.15-.2.29-.77.94-.94 1.13-.17.2-.35.22-.64.07-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.52.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.29-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.11 3.22 5.12 4.52.72.31 1.28.49 1.71.63.72.23 1.37.2 1.88.12.57-.09 1.71-.7 1.95-1.38.24-.67.24-1.25.17-1.38-.07-.12-.27-.2-.57-.35z"/>
       <path d="M26.62 5.35C23.97 2.71 20.47 1.25 16.74 1.25 9.08 1.25 2.85 7.48 2.85 15.14c0 2.45.64 4.84 1.86 6.95L2.73 30.75l8.86-1.93c2.04 1.11 4.34 1.7 6.69 1.7h.01c7.66 0 13.89-6.23 13.89-13.89 0-3.71-1.45-7.2-4.06-9.78zm-9.88 22.8h-.01c-2.07 0-4.1-.56-5.86-1.61l-.42-.25-5.26 1.15 1.12-5.12-.27-.43c-1.14-1.81-1.74-3.91-1.74-6.06 0-6.29 5.12-11.41 11.41-11.41 3.05 0 5.91 1.19 8.06 3.34 2.15 2.15 3.33 5.01 3.33 8.07 0 6.29-5.12 11.32-11.36 11.32z"/>
@@ -253,7 +234,7 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <script src="assets/js/app.js"></script>
+
+  <script src="assets/js/app.js" defer></script>
 </body>
 </html>
-
