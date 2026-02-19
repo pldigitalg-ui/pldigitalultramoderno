@@ -132,7 +132,13 @@ function applyData(data){
   )).join("");
 
   // CTAs
-  $("#ctaPrimary").textContent = data.cta.primary;
+ $("#ctaPrimary").textContent = data.cta.primary;
+$("#ctaPrimary").href = wa;
+const ctaDrawer = $("#ctaPrimaryDrawer");
+if (ctaDrawer){
+  ctaDrawer.textContent = data.cta.primary;
+  ctaDrawer.href = wa;
+}
   $("#ctaSecondary").textContent = data.cta.secondary;
   $("#ctaBudget").textContent = data.cta.budget;
 
