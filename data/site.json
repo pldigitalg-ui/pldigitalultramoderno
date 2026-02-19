@@ -1,1 +1,74 @@
+{
+  "brand": "PL DIGITAL GROUP",
+  "tagline": "Quer vender mais pelo Instagram e WhatsApp?",
+  "headline": "Eu organizo seu digital com padrão premium.",
+  "subheadline": "Instagram + tráfego + site/sistema para o cliente entender, confiar e chamar no WhatsApp.",
+  "badges": ["Resposta rápida", "Foco em conversão", "Crescimento organizado"],
+  "city": "Atendimento em todo o Brasil • Chamada online",
+  "email": "PLdigitalG@gmail.com",
+  "whatsapp": {
+    "ddiPhone": "5531998832407",
+    "defaultMessage": "Olá! Quero um orçamento para organizar meu digital (Instagram + tráfego + site)."
+  },
+  "nav": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Serviços", "href": "#servicos" },
+    { "label": "Portfólio", "href": "#portfolio" },
+    { "label": "Instagram", "href": "#instagram" },
+    { "label": "Contato", "href": "#contato" }
+  ],
+  "cta": {
+    "primary": "Entrar em contato",
+    "secondary": "Ver serviços",
+    "budget": "Orçamento"
+  },
+  "services": [
+    {
+      "title": "Gestão de Instagram",
+      "desc": "Perfil otimizado, conteúdo alinhado à oferta e estratégia para gerar leads.",
+      "tag": "Autoridade + Consistência"
+    },
+    {
+      "title": "Tráfego Pago",
+      "desc": "Campanhas para WhatsApp com rastreio e otimização focada em custo por lead.",
+      "tag": "Conversão"
+    },
+    {
+      "title": "Sites & Sistemas",
+      "desc": "Páginas rápidas, claras e persuasivas para o cliente entender e pedir no WhatsApp.",
+      "tag": "Performance"
+    },
+    {
+      "title": "Landing de Alta Conversão",
+      "desc": "Estrutura direta com prova, benefícios e CTA para capturar demanda.",
+      "tag": "Venda"
+    },
+    {
+      "title": "Automação WhatsApp",
+      "desc": "Respostas rápidas, coleta de dados e organização do atendimento.",
+      "tag": "Escala"
+    },
+    {
+      "title": "Diagnóstico Premium",
+      "desc": "Plano de ação em 7 dias: oferta, perfil, funil e melhorias de conversão.",
+      "tag": "Ação"
+    }
+  ],
+  "portfolio": [
+    { "title": "Site 01 — Landing", "img": "assets/img/p1.jpg", "href": "#", "label": "Ver projeto" },
+    { "title": "Site 02 — Serviços", "img": "assets/img/p2.jpg", "href": "#", "label": "Ver projeto" },
+    { "title": "Site 03 — Cardápio", "img": "assets/img/p3.jpg", "href": "#", "label": "Ver projeto" },
+    { "title": "Site 04 — Institucional", "img": "assets/img/p4.jpg", "href": "#", "label": "Ver projeto" },
+    { "title": "Site 05 — Conversão", "img": "assets/img/p5.jpg", "href": "#", "label": "Ver projeto" }
+  ],
+  "instagram": {
+    "title": "Modelos prontos para vender mais",
+    "desc": "Vou adicionar seus modelos aqui. Deixe esta seção preparada para carrosséis e posts com design premium.",
+    "imgs": ["assets/img/ig1.jpg", "assets/img/ig2.jpg", "assets/img/ig3.jpg"]
+  },
+  "contact": {
+    "title": "Vamos transformar seu digital em máquina de leads",
+    "desc": "Preencha e envie. O botão já abre o WhatsApp com sua mensagem pronta."
+  }
+}
 
