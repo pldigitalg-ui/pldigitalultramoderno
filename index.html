@@ -14,10 +14,9 @@
 </head>
 
 <body>
-
   <!-- TOP STRIP -->
   <div class="top-strip">
-    <div class="container">
+    <div class="container strip">
       <div class="strip-left">
         <span class="dot"></span>
         <span id="stripEmail">PLdigitalG@gmail.com</span>
@@ -32,12 +31,12 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="container">
+    <div class="container header-row">
       <a class="brand" href="#home" aria-label="Ir para início">
         <div class="mark" aria-hidden="true"></div>
         <div class="txt">
           <strong id="brandName">PL DIGITAL GROUP</strong>
-          <span>Gestão • Tráfego • Sites/Sistemas</span>
+          <span id="brandSub">Gestão • Tráfego • Sites/Sistemas</span>
         </div>
       </a>
 
@@ -58,25 +57,26 @@
   <!-- DRAWER MOBILE -->
   <div class="drawer" id="drawer" aria-hidden="true">
     <div class="drawer-panel">
-      <div class="row">
+      <div class="drawer-top">
         <strong>Menu</strong>
         <button class="btn" id="drawerClose" type="button">Fechar</button>
       </div>
+
       <nav id="drawerNav"></nav>
-      <div style="margin-top:10px;">
-      <a class="btn primary" id="ctaPrimaryDrawer" href="#" target="_blank" rel="noopener">Entrar em contato</a>  
+
+      <div class="drawer-cta">
+        <a class="btn primary" id="ctaPrimaryDrawer" href="#" target="_blank" rel="noopener">Entrar em contato</a>
       </div>
     </div>
   </div>
 
-  <!-- HERO (ÚNICA) -->
+  <!-- HERO -->
   <section class="hero" id="home">
     <div class="container">
       <div class="hero-grid">
-
-        <!-- Left -->
+        <!-- Copy -->
         <div class="hero-copy">
-          <div class="h-eyebrow">
+          <div class="eyebrow">
             <span class="spark"></span>
             <span class="kbd" id="heroTagline">Quer vender mais pelo Instagram e WhatsApp?</span>
           </div>
@@ -90,24 +90,35 @@
           </p>
 
           <div class="hero-ctas">
-            <a class="btn primary" id="ctaPrimary" href="#" target="_blank" rel="noopener">Entrar em contato</a>
-            <a class="btn" id="ctaSecondary" href="#servicos">Ver serviços</a>
+            <a class="btn primary" id="ctaPrimaryHero" href="#" target="_blank" rel="noopener">Entrar em contato</a>
+            <a class="btn ghost" id="ctaSecondary" href="#servicos">Ver serviços</a>
           </div>
 
-          <div class="note">
-            Estratégia clara, execução rápida e entrega com padrão premium.
+          <div class="proof">
+            <div class="proof-item">
+              <strong>+ Clareza</strong>
+              <span>Oferta + perfil + funil</span>
+            </div>
+            <div class="proof-item">
+              <strong>+ Leads</strong>
+              <span>WhatsApp organizado</span>
+            </div>
+            <div class="proof-item">
+              <strong>+ Velocidade</strong>
+              <span>Execução em dias</span>
+            </div>
           </div>
 
-          <!-- Badges dinâmicas do JSON -->
           <div class="badges" id="badges"></div>
         </div>
 
-        <!-- Right Visual -->
+        <!-- Visual -->
         <div class="hero-visual" id="heroVisual" aria-hidden="true">
           <div class="hero-bg" id="heroBg"></div>
-          <img id="heroMascot" class="hero-mascot" src="assets/img/mascot.png" alt="PL Digital Group" loading="eager">
+          <div class="hero-glow"></div>
+          <img id="heroMascot" class="hero-mascot" src="assets/img/mascot.png" alt="PL Digital Group" loading="eager" />
+          <div class="hero-frame"></div>
         </div>
-
       </div>
     </div>
   </section>
@@ -133,7 +144,7 @@
       <div class="section-head">
         <div>
           <h2>Portfólio</h2>
-          <p class="sub">5 modelos prontos (você troca as imagens/links). O objetivo é mostrar velocidade e padrão.</p>
+          <p class="sub">Modelos prontos para você trocar imagens/links. Padrão premium e velocidade.</p>
         </div>
       </div>
 
@@ -154,12 +165,12 @@
 
       <div class="ig-strip">
         <div class="panel">
-          <h3 style="margin:0 0 10px;">Estratégia visual que converte</h3>
-          <p style="margin:0; color:rgba(234,240,255,.72); line-height:1.7;">
+          <h3>Estratégia visual que converte</h3>
+          <p>
             Conteúdo não é só “postar bonito”. Aqui é: posicionamento, prova social, chamada certa e link certo.
             Essa seção já fica pronta para você encaixar seus modelos e seus cases.
           </p>
-          <div style="margin-top:14px;">
+          <div class="panel-cta">
             <a class="btn primary" href="#contato">Quero melhorar meu Instagram</a>
           </div>
         </div>
@@ -181,14 +192,14 @@
 
       <div class="contact-grid">
         <div class="panel">
-          <h3 style="margin:0 0 10px;">Como funciona (rápido e claro)</h3>
-          <ul style="margin:0; padding-left:18px; color:rgba(234,240,255,.72); line-height:1.9;">
+          <h3>Como funciona (rápido e claro)</h3>
+          <ul class="list">
             <li>Diagnóstico do seu Instagram e oferta</li>
             <li>Organização do funil (bio + link + WhatsApp)</li>
             <li>Campanha de tráfego focada em leads</li>
             <li>Landing/page para aumentar confiança</li>
           </ul>
-          <div style="margin-top:14px;">
+          <div class="panel-cta">
             <a class="btn accent" href="#servicos">Ver pacotes e serviços</a>
           </div>
         </div>
@@ -199,7 +210,7 @@
             <input class="input" id="fPhone" name="phone" placeholder="Seu WhatsApp" required />
             <textarea class="input" id="fMsg" name="message" placeholder="Me conta seu objetivo (ex: vender mais, agenda, leads, etc.)" required></textarea>
             <button class="btn primary" type="submit">Enviar no WhatsApp</button>
-            <p class="small" style="margin:0; opacity:.7;">
+            <p class="small">
               Não mostramos o número no site — apenas abre o WhatsApp com a mensagem preenchida.
             </p>
           </form>
@@ -210,14 +221,14 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-row">
       <div>
         <strong>PL Digital Group</strong>
         <div class="small" id="footerCity">Atendimento em todo o Brasil • Chamada online</div>
       </div>
       <div class="small">
         <div>Email: <span id="footerEmail">PLdigitalG@gmail.com</span></div>
-        <div style="margin-top:8px;">© <span id="year"></span> • Padrão premium</div>
+        <div class="copy">© <span id="year"></span> • Padrão premium</div>
       </div>
     </div>
   </footer>
@@ -234,7 +245,6 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
   <script src="assets/js/app.js" defer></script>
 </body>
 </html>
